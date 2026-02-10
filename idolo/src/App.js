@@ -7,6 +7,7 @@ import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
 import Workspace from './pages/Workspace';
 import { Toaster } from './components/ui/sonner';
+import BackendWakeUp from './components/BackendWakeUp';
 import './App.css';
 
 export default function App() {
@@ -14,6 +15,7 @@ export default function App() {
     <AuthProvider>
       <Router>
         <div className="min-h-screen">
+          <BackendWakeUp />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
