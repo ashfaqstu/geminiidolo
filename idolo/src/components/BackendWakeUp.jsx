@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import axios from 'axios';
 import { Loader2 } from 'lucide-react';
 
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || '';
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || ''; // In production, leave empty so /api/* routes are proxied via vercel.json rewrites
 
 const BackendWakeUp = () => {
   const hasRun = useRef(false);

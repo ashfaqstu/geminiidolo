@@ -1,3 +1,9 @@
 {
-  "outputDirectory": "build"
+  "outputDirectory": "build",
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "https://idolcode-backend.onrender.com/api/:path*"
+    }
+  ]
 }
